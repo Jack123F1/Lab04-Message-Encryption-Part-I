@@ -102,6 +102,7 @@ DealKey PROC
     mov edi,keySize
     sub ecx,keySize
 L1: 
+    mov esi,0
     mov al,kBuffer[esi]
     mov kBuffer[edi],al
     inc esi             ; point to next byte
